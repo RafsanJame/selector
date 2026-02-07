@@ -13,27 +13,55 @@
         input[type="password"] {
             border: 2px green solid;
         }
-        ul li{
+
+        ul li {
             color: magenta;
 
         }
-        h1 + p{
+
+        h1+p {
             color: gold;
         }
-        li:nth-child(1){
+
+        li:nth-child(1) {
             color: red;
         }
-        li:nth-child(2){
+
+        li:nth-child(2) {
             background-color: lightblue;
         }
-        li:nth-child(3){
+
+        li:nth-child(3) {
             color: blue;
         }
+
+        #hov {
+            background-color: wheat;
+            height: 50px;
+            width: 100px;
+            border: 3px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hov:hover{
+            cursor: pointer;
+            transform: scale(1.06);
+            transition: 0.4s;
+            background-color: #444;
+            color: white;
+
+        }
+        h3:not(.two){
+            color: brown;
+        }
+        
     </style>
 </head>
 
 <body>
-<!-- input selectors -->
+    <!-- input selectors -->
     <form action="#">
         <div>
             <label for="">Enter email</label>
@@ -47,14 +75,20 @@
         <button type="submit">Login</button>
     </form>
     <!-- child selector -->
- <ul>
-    <li>first</li>
-    <li>second</li>
-    <li>third</li>
- </ul>
- <!-- sibling selector -->
- <h1>this sibling 1</h1>
- <p>this is sibling 2</p>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <!-- sibling selector -->
+    <h1>this sibling 1</h1>
+    <p>this is sibling 2</p>
+
+    <p id="hov">Codingal</p>
+   
+<h3 class="one">heading 1</h3>
+<h3 class="two">heading 2</h3>
+<h3 class="three">heading 3</h3>
 </body>
 
 </html>
